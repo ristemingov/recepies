@@ -1,0 +1,19 @@
+<div *ngIf="selectedRecipe">
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{selectedRecipe?.name}}</h1>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <p>{{selectedRecipe?.instructions}}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div><span class="label label-primary" style="margin-right: 10px;font-size: 1.1em;" *ngFor="let ingredient of selectedRecipe?.ingredients">{{ingredient.name}} {{ingredient.ammount}}</span>
+    </div>
+  </div>
+</div>
+</div>
